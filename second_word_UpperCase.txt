@@ -1,0 +1,10 @@
+
+        String [] words=input1.split(" ");
+		if(words.length==1){return "LESS";}
+		else
+		{
+           String second_word=words[1];
+		   return second_word.toUpperCase();
+		}
+		
+Link ro pratice : https://tests.mettl.com/test-window/4a72723f

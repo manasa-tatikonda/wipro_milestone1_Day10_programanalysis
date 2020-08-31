@@ -1,0 +1,16 @@
+
+        input1=input1.toUpperCase();
+		int i=0,j=input1.length()-1,flag=0;
+		while(j>i)
+		{
+            char c1=input1.charAt(i);
+			char c2=input1.charAt(j);
+			if(Character.compare(c1, c2)!=0){flag=1;break;}
+			i++;j--;
+		}
+		if(flag==1){return 1;}
+		else{return 2;}
+
+
+
+Link to pratice : https://tests.mettl.com/test-window/ffe8042

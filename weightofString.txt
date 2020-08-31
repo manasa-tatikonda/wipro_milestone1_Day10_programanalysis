@@ -1,0 +1,26 @@
+        input1=input1.toLowerCase();
+		int weight=0;
+		if(input2==1)
+		{
+             for(int i=0;i<=input1.length()-1;i++)
+			 {
+                  char ch=input1.charAt(i);
+				  if(ch>='a' && ch<='z')
+				     {weight+=((int)ch-96);}
+				  //lowercase letters ascii values starts from 97-122
+			 }
+		}
+		else if(input2==0) //vowels should ignored 
+		{
+             for(int i=0;i<=input1.length()-1;i++)
+			 {
+                  char ch=input1.charAt(i);
+				  if(ch>='a' && ch<='z')
+				  {
+                       if(ch!='a' && ch!='e' && ch!='i'&& ch!='o'&& ch!='u')
+				       {weight+=((int)ch-96);}
+				  }
+			 }	   
+		}
+		return weight;	  
+Link to Pratice : https://tests.mettl.com/test-window/387952fc		

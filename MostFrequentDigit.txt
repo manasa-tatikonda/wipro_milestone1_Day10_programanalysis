@@ -1,0 +1,24 @@
+        int [] numbers={input1,input2,input3,input4};
+		int [] digits=new int[10];
+		for(int num:numbers)
+		{ 
+             do
+			 {
+				 digits[num%10]++;
+				 num/=10;
+			 }while(num!=0);
+		
+		}
+		int max=digits[0],index=0;
+		for(int i=1;i<10;i++)
+		{
+            if(digits[i]>=max)
+			{
+				max=digits[i];
+				index=i;
+			}
+		}
+		return index;
+
+
+Link to pratice : https://tests.mettl.com/test-window/916310b8
